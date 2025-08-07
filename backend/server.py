@@ -1,8 +1,11 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
 
-model = joblib.load("../model/graduate_admission_model.joblib")  
+
 app = Flask(__name__)
+CORS(app) 
+model = joblib.load("../model/graduate_admission_model.joblib")  
 
 @app.route("/")
 def home():
