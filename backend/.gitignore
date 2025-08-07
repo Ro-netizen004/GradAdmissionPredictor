@@ -1,0 +1,58 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter notebooks checkpoint files
+.ipynb_checkpoints/
+
+# MacOS files
+.DS_Store
+
+# VS Code settings (optional)
+.vscode/
+
+# System files
+Thumbs.db
+
+# Flask/Machine Learning specific
+instance/
+*.log
+*.sqlite
+*.db
+
+# Joblib / Pickle models
+*.joblib
+*.pkl
+
+# Large data and model directories
+data/
+model/
+
+# Postman / Insomnia exports (if you use them)
+*.postman_collection.json
+*.har
+
+# Environment and secrets
+.env
+*.env
+secrets.json
+
+# Pytest / coverage
+.cache/
+*.cover
+coverage.xml
+htmlcov/
+
+# Anything else large or local
+*.csv
+*.tsv
+*.xlsx
