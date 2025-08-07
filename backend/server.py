@@ -11,6 +11,14 @@ model = joblib.load("graduate_admission_model.joblib")
 def home():
     return "Server is running!"
 
+@app.route("/ping")
+def ping():
+    try:
+        model.predict([[320, 110, 4, 4.5, 4, 9.0, 1]])  # Dummy call
+        return "Ping successful"
+    except Exception as e:
+        return f"Ping failed: {str(e)}", 500
+
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
