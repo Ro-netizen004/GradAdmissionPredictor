@@ -30,7 +30,6 @@ instance/
 *.db
 
 # Joblib / Pickle models
-*.joblib
 *.pkl
 
 # Large data and model directories
