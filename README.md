@@ -1,6 +1,8 @@
 # Graduate Admission Predictor
 Link to site: https://gradadmissionpredictor.onrender.com/
 
+Note: On the free Render plan, the backend may spin down after periods of inactivity. This means the first request after inactivity may take longer to respond, as the server needs to “wake up.” Subsequent requests are faster.
+
 A web application that predicts the chance of admission to graduate programs using a Linear Regression model built with Scikit-Learn. The model uses various academic and application parameters to provide a probability score that helps prospective students assess their chances of admission.
 
 ## Features
